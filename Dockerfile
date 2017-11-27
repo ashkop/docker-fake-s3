@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -yqq ruby rubygems-integration git
 
 # install fake-s3
 RUN git clone https://github.com/ashkop/fake-s3.git
-RUN cd fake-s3 && gem build fakes3.gemspec && gem install fakes3-0.2.4.gem
+RUN cd fake-s3 && gem build fakes3.gemspec && gem install fakes3-1.2.0.gem
 
 # run fake-s3
 RUN mkdir -p /fakes3_root
